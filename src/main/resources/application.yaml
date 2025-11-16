@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: Chat
+
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>ChatApp — Simple. Fast. Human.</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+        background: #f5f5f7;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    }
+
+    /* NAVBAR */
+    .navbar {
+        backdrop-filter: blur(15px);
+        background: rgba(255, 255, 255, 0.7)!important;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    /* HERO */
+    .hero {
+        padding: 90px 0;
+    }
+
+    .hero-title {
+        font-size: 42px;
+        font-weight: 700;
+        color: #1d1d1f;
+        line-height: 1.2;
+    }
+
+    .hero-text {
+        font-size: 18px;
+        color: #5d5d5f;
+        margin-top: 15px;
+        line-height: 1.5;
+    }
+
+    .hero-img {
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+    }
+
+    /* SECTION TITLES */
+    .section-title {
+        font-size: 32px;
+        font-weight: 700;
+        color: #1d1d1f;
+        margin-bottom: 20px;
+        text-transform: none;
+    }
+
+    /* CARDS */
+    .info-card {
+        background: white;
+        padding: 25px;
+        border-radius: 16px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        height: 100%;
+    }
+
+    .info-card p {
+        color: #59595c;
+        margin-top: 10px;
+        line-height: 1.5;
+    }
+
+    /* FEEDBACK */
+    .feedback-box {
+        background: white;
+        padding: 35px;
+        border-radius: 16px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    /* FOOTER */
+    footer {
+        background: #1d1d1f;
+        color: #f5f5f7;
+        padding: 30px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light p-3">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#" style="font-size: 24px;">ChatApp</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+  </div>
+</nav>
+
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- LEFT -->
+      <div class="col-md-6 mb-4">
+        <h1 class="hero-title">Conversations that feel natural.<br>Connections that feel real.</h1>
+        <p class="hero-text">
+          ChatApp gives you a clean and effortless space to talk with the people
+          who matter — without distractions, without clutter.
+        </p>
+        <button class="btn btn-dark btn-lg mt-3" onclick="window.location='/chat'">
+          Start Chatting
+        </button>
+      </div>
+
+      <!-- RIGHT IMAGE -->
+      <div class="col-md-6">
+        <img src="https://images.unsplash.com/photo-1525182008055-f88b95ff7980?auto=format&fit=crop&w=900&q=80"
+             class="hero-img">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- WHY CHOOSE -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center">Why Choose ChatApp?</h2>
+
+    <p class="text-center mb-5" style="font-size: 18px; color: #6e6e73;">
+      Thoughtfully designed to make every conversation simple, comfortable, and beautifully human.
+    </p>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="info-card">
+          <h4>⚡ Instant Conversations</h4>
+          <p>
+            Messages appear the moment you send them.
+            No loading. No delays. Just natural back-and-forth.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="info-card">
+          <h4>🧘 Clean & Comfortable Design</h4>
+          <p>
+            A soft, minimal interface inspired by macOS — easy on the eyes, easy to use,
+            and made for long chats.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="info-card">
+          <h4>🔒 Private by Default</h4>
+          <p>
+            Your chats stay between you and the people you talk to.
+            No noise, no tracking, no unwanted surprises.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="info-card">
+          <h4>👥 Your Space, Your Rooms</h4>
+          <p>
+            Create a room for your friends, your team, or your group —
+            or join one instantly. Communication that fits your flow.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="info-card">
+          <h4>📱 Seamless on Every Device</h4>
+          <p>
+            Whether you're on a phone, tablet, or laptop,
+            ChatApp adjusts perfectly to your screen.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="info-card">
+          <h4>❤️ Designed for Humans</h4>
+          <p>
+            No menus to fight with. No confusing settings.
+            Just a simple place to talk — the way it should be.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ABOUT -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center">About ChatApp</h2>
+
+    <p class="text-center" style="font-size: 18px; color:#5d5d5f;">
+      ChatApp was created with one goal: to make online conversations feel
+      natural again.
+      In a world full of noisy platforms, we offer a space that is calm,
+      simple, and built for genuine communication.
+      Whether you're chatting with friends, studying with classmates,
+      or planning with your team — ChatApp makes it effortless.
+    </p>
+  </div>
+</section>
+
+
+<!-- FUTURE PLANS -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center">Future Plans</h2>
+
+    <div class="row mt-4">
+
+      <div class="col-md-6 mb-3">
+        <div class="info-card">
+          <h4>🤖 Smart Chat Suggestions</h4>
+          <p>
+            Helpful suggestions, faster replies, and smoother group conversations
+            powered by next-gen intelligence.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <div class="info-card">
+          <h4>📱 Dedicated Mobile App</h4>
+          <p>
+            A beautifully crafted app for iOS and Android for
+            seamless communication on the go.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <div class="info-card">
+          <h4>🧩 Custom Themes</h4>
+          <p>
+            Choose the colors and styles that feel like you —
+            from dark mode to pastel themes.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <div class="info-card">
+          <h4>🌍 Global Language Support</h4>
+          <p>
+            Chat comfortably in your own language with
+            full multilingual support.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- FEEDBACK -->
+<!-- Contact -->
+
+<!-- FOOTER -->
+<footer class="text-center">
+  <p>© 2025 ChatApp — Simple. Fast. Human.</p>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
